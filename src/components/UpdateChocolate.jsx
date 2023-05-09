@@ -19,7 +19,7 @@ const UpdateChocolate = () => {
         const newChocolate = { name, country, category, photo }
         console.log(newChocolate);
         //send data to the server
-        fetch(`http://localhost:5000/chocolate/${_id}`, {
+        fetch(`https://chocolate-manage-server-mehetaj.vercel.app/chocolate/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

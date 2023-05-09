@@ -15,7 +15,7 @@ const AddChocolate = () => {
         const newChocolate = { name, country, category,photo }
         console.log(newChocolate);
         //send data to the server
-        fetch('http://localhost:5000/chocolate',{
+        fetch('https://chocolate-manage-server-mehetaj.vercel.app/chocolate',{
             method : 'POST',
             headers : {
                 'content-type' : 'application/json'

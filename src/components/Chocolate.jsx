@@ -22,7 +22,7 @@ const Chocolate = ({ chocolate , chocolates , setChocolates }) => {
           if (result.isConfirmed) {
     
             console.log(_id);
-            fetch(`http://localhost:5000/chocolate/${_id}`, {
+            fetch(`https://chocolate-manage-server-mehetaj.vercel.app/chocolate/${_id}`, {
               method: 'DELETE'
             })
               .then(res => res.json())
